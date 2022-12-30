@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/* Css variables */
+/* variables for colors */
 
 :root{
     --primary-color:#07485D;
@@ -21,6 +21,13 @@ a{
     text-decoration: none;
 }
 
+header{
+    position: relative;
+    height: 83px;
+    width: 100%;
+    margin-top: 1rem;
+}
+
 .container{
     width: 100%;
     max-width: 1140px;
@@ -32,20 +39,8 @@ a{
     justify-content: space-between;
     align-items: center;
 }
-header{
-    position: relative;
-    height: 83px;
-    width: 100%;
-    margin-top: 1rem;
 
-}
 
-nav{
-    height: 83px;
-    width: 100%;
-    padding: 20px 0px;
-
-}
 
 .brand{
     color: #021300;
@@ -58,12 +53,6 @@ nav{
 
 .brand-text{
     color: var(--primary-color);
-}
-
-.navigation-bar ul{
-    margin: 0;
-    padding: 0;
-
 }
 
 .navigation-bar ul li{
@@ -86,7 +75,7 @@ nav{
 
 .navigation-bar ul li a:hover{
     color: var(--secondary-color);
-    border-bottom: 2px solid var(--info-color);
+    border-bottom: 3px solid var(--primary-color);
 }
 .btn{
     display: inline-block;
@@ -102,6 +91,7 @@ nav{
     color:var(--fore-color);
 }
 
+/* Manual burger menu */
 .burger{
     width: 25px;
     cursor: pointer;
@@ -146,6 +136,7 @@ nav{
         text-align: center;
         justify-content: center;
         z-index: 2;
+       
     }
     .navigation-bar ul li{
         display: block;
